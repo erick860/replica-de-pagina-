@@ -1,87 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <title>Aspen Motos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
 </head>
-<body>
-    <header>
-    <nav class="navegador">
-        <img src="./imagenes/banner.jpg" alt="" class="img1">
-        <a href=""class="item">inicio</a>
-        <a href=""class="item">nosotros</a>
-        <a href="./html/contacto.html"class="item">contacto</a>
-      
-    </nav>
-</header>
-
-<img src="./imagenes/blog1.jpg" alt=""class="img2portada">
-
-<div class="padrenosotros">
-    <div class="imagen-nosotros">
-       <img src="./imagenes/blog2.jpg" alt=""class="img3nosotros">
-    </div>
-<div class="texto-nosotros">
-    <h1 class="tituloN">nuestro blog</h1>
-    <p class="parrafoN">
-        El tueste de café es un proceso sumamente complejo e interesante. Entre 10 y 12 minutos son suficientes para convertir unas semillas verdes con aromas vegetales y una consistencia tan dura como una piedra en los maravillosos granos que todos amamos. Durante este proceso, se desata una auténtica explosión de aromas y sabores que nos acompaña cada día, en cada sorbo, bajo la forma de una rica taza de café.
-    </p>
-</div>
-</div>
-<!-- galeria -->
-<h2 class="titulogaleria">diferentes tipos de cafe</h2>
-<div class="galeria1">
-  <img src="./imagenes/curso1.jpg" alt=""class="img-galeria">
-  <img src="./imagenes/curso2.jpg" alt=""class="img-galeria">
-  <img src="./imagenes/curso3.jpg" alt=""class="img-galeria">
-  <img src="./imagenes/nosotros.jpg" alt=""class="img-galeria">
-  <img src="./imagenes/blog3.jpg" alt=""class="img-galeria">
-  <img src="./imagenes/curso4.jpg" alt=""class="img-galeria">
-</div>
-<!-- contacto -->
-<div class="padremapa">
-    <div class="mapa" >
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7121.07349250157!2d-65.19648678065306!3d-26.822875412366095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d7c5a43e3e3%3A0x8424e1011dc81045!2sBenito%20Santos%20Caf%C3%A9!5e0!3m2!1ses!2sar!4v1703040228794!5m2!1ses!2sar" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapacontac"></iframe>
-   </div>
-    <div class="contac">
-        <h2 class="parrafoN">contacto</h2>
-        <form class="formuContac">
-              <!-- <fieldset> -->
-                 <div class="contactos">
-                   <label for="nombre">Nombre</label>
-                   <input type="text" placeholder="nombre" required maxlength="15" minlength="5" id="nombre">
-                </div>
-
-                <div class="contactos" >
-                    <label for="Apellido">Apellido</label>
-                    <input type="text" placeholder="apellido" required maxlength="15" minlength="8" id="Apellido">
-                 </div>
-
-                 <div class="contactos">
-                    <label for=""> Correo</label>
-                    <input type="email" placeholder="Email" required>
-                 </div>
-
-                 <div class="contactos" >
-                    <label>Telefono</label>
-                    <input type="tel" placeholder="3814227493" required maxlength="11" minlength="10">
-                </div>
-
-                <div class="contactos">
-                     <label>mensaje</label>
-                     <textarea></textarea>
-                </div>
-
-                <div class="boton">
-                      <input type="submit" value="Enviar" >
-                </div>
-            </fieldset>
-
+  <body>
+    <header>     
+ <!-- menu de navegacion -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+          <nav class="navbar bg-body-tertiary">
+                <img src="/img/LOGO-WEB.webp" alt="Logo" width="80" height="60" class="d-inline-block align-text-top">
+          </nav>
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            
+            <a class="nav-link active" aria-current="page" href="html/motos.html">MOTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/repuesto.html">REPUESTOS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              INDUMENTARIA
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/html/camperas.html">CAMPERAS</a></li>
+              <li><a class="dropdown-item" href="html/casco.html">CASCOS</a></li>
+              <li><a class="dropdown-item" href="html/lluvia.html">EQUIPOS DE LLUVIA</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/contaco.html">CONTACTO</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="BUSCAR" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg></button>
         </form>
+      </div>
     </div>
-    
+  </nav>
+</header>
+<main>
+<!-- carrocel -->
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/img/PORTADA-NAVI.1.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/PORTADA2.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/PORTADA3.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+  </div>
+  <!-- fin carrocel -->
+  <!-- FINANCIACION -->
+  <div class="financ">
+    <img class="FINANCIACION1" src="img/FINANCIACION (2).webp" alt="">
+   
+  </div>
+  <!-- fin de FINANCIACION -->
+  <div class="container1">
+<img src="/img/Motos.webp" class=" custom-hover" alt="..." >
+<img src="/img/Repuestos.webp" class=" custom-hover" alt="...">
+<img src="/img/Indumentaria.webp" class="custom-hover" alt="...">
+<img src="/img/Cascos.webp" class="custom-hover" alt="...">
+<img src="/img/trajes de lluvia.webp" class="custom-hover" alt="...">
+<img src="/img/guantes.webp" class=" custom-hover" alt="...">
 </div>
-</body>
+
+</main>
+<div class="contenedor">
+  <div class="imagen-container">
+    <img src="img/BANNER-ROUSER2.webp" alt="Imagen 1" class="imagen">
+    <div class="overlay"></div>
+  </div>
+  <div class="imagen-container">
+    <img src="img/BANNER1.webp" alt="Imagen 2" class="imagen">
+    <div class="overlay"></div>
+  </div>
+</div>
+
+<!-- galeria destacado -->
+<h1 class="titulo1">producos destacados</h1>
+
+<section class="galeriaDestacada">
+  <img class="costado1" src="img/COSTADO1.webp" alt="">
+
+  <div class="card" style="width: 15rem;">
+    <img class="card-img-top" src="img/FZ-S-V3.0-GRIS-OSCURO. destacado.webp" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Moto Yamaha – FZ-S 150 V3.0</h5>
+      <p class="card-text">$ 3.983.400</p>
+      <a href="html/fztecnica.html" class="btn btn-primary">ver descriccion</a>
+    </div>
+  </div>
+
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="img/N-250-ABS-BRROKLIN-BACK-NEGRO. destacado.webp" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Moto Bajaj – Rouser N 250 ABS Brroklin Back</h5>
+    <p class="card-text">$ 5.517.900</p>
+    <a href="html/rouser.html" class="btn btn-primary">ver descriccion</a>
+  </div>
+</div>
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="img/DOMINAR-400-VERDE-1. destacado.webp" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Moto Bajaj – Dominar 400</h5>
+    <p class="card-text">$ 7.842.100</p>
+    <a href="/html/ficha.html" class="btn btn-primary">ver descriccion</a>
+  </div>
+</div>
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="img/CB-300-F-ROJO.descatado.webp" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Moto Honda – CB 300 F Twister</h5>
+    <p class="card-text">$ 6.126.100</p>
+    <a href="html/cb300.html" class="btn btn-primary">ver descriccion</a>
+  </div>
+</div>
+
+</section>
+<!-- baner2 -->
+
+<div class="contenedor">
+  <div class="imagen-container">
+    <img src="img/CB500X.baner2.webp" alt="Imagen 1" class="imagen">
+    <div class="overlay"></div>
+  </div>
+  <div class="imagen-container">
+    <img src="img/AFRICA.baner2.webp" alt="Imagen 2" class="imagen">
+    <div class="overlay"></div>
+  </div>
+</div>
+<!-- cars2 -->
+<h2 class="titulo1">productos en oferta</h2>
+<section class="galeriaDestacada">
+  <img class="costado1" src="img/COSTADO4 ofertas.webp" alt="">
+  <div class="card" style="width: 15rem;">
+    <img class="card-img-top" src="img/BLITZ-110-START-AZUL. ofertas.webp" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Moto Motomel – Blitz 110 Start</h5>
+      <p class="card-text">$ 1.062.900</p>
+      <a href="#" class="btn btn-primary">ver descriccion</a>
+    </div>
+  </div>
+
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="img/CRONO-CLASSIC-ECO-110-AZUL ofertas.webp" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Moto Keller – Crono Classic Eco 110</h5>
+    <p class="card-text">$ 946.100</p>
+    <a href="#" class="btn btn-primary">ver descriccion</a>
+  </div>
+</div>
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="img/DLX110-DELUXE-NUEVA-NEGRO ofertas.webp" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Moto Motomel – DLX110 Deluxe</h5>
+    <p class="card-text">$ 1.124.800</p>
+    <a href="#" class="btn btn-primary">ver descriccion</a>
+  </div>
+</div>
+<div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="img/ZB-110-LT-RAYO-TAMBOR-ROJO. ofertas.webp" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Moto Zanella – ZB 110 LT Rayo Tambor</h5>
+    <p class="card-text">$ 1.114.300</p>
+    <a href="#" class="btn btn-primary">ver descriccion</a>
+  </div>
+</div>
+
+</section>
+<!-- fin de oferta -->
+<!-- carrocel2 -->
+<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/01 baner1.webp" class="d-block w-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/02baner2.webp" class="d-block w-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/03.baner3.webp" class="d-block w-50" alt="...">
+    </div>
+
+
+    
+  </div>
+</div> -->
+<!-- pie de pagina -->
+<footer>
+  <img src="img/logo-aspen-transparente-blanco. pie de pagina.webp" alt="Pie de página">
+  <p>SUCURSALES TUCUMÁN
+    Av. Avellaneda 537 – S.M. de Tucumán | (0381) 155273532
+    
+    Av. 24 de Septiembre esq. Las Heras – S.M. de Tucumán | (0381) 155116175
+    
+    Av. Mitre esq. Marcos Paz – S.M. de Tucumán | (0381) 155084807
+    
+    Av. Aconquija 1970 – Yerba Buena | (0381) 155832658
+    
+    24 de Septiembre 1362 – Concepción | (0381) 155273538
+    
+    SUCURSALES SALTA
+    Pellegrini 360 – Salta Capital | (0381) 153006664
+    
+    Pellegrini esq. La Rioja – Salta Capital | (0387) 155062967
+    
+    SUCURSAL JUJUY
+    Av. Juana Manuela Gorriti 746 – San Salvador de Jujuy | (0388) 153103514
+    
+    POLÍTICAS
+    Términos y condiciones
+    Política de privacidad</p>
+</footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
